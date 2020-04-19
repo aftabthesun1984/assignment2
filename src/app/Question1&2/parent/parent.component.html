@@ -1,0 +1,15 @@
+<h5>Q1.Create an increment counter with reset button When I click on the Counter Button it should be incremented by 1 and when we click on reset it will print 0. </h5>
+
+<app-child [childCounter]="counter"></app-child> 
+
+<div>  
+  <button (click)="onCounter()">Counter</button>
+  <button (click)="onReset()">Reset</button> <br/> 
+</div>
+
+
+
+<h5>Q.2 You are given a Textbox .To put your hobby in the textbox.Suppose you have entered two of your hobbies like Cricket and Tennis print the previous hobby and next hobby on the console. </h5>
+
+<input type='text' [(ngModel)]='userText'/><br/><br/>
+<app-hobby [hobby]='userText'></app-hobby>

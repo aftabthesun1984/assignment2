@@ -1,0 +1,12 @@
+<h5>{{title}}</h5><br/>
+
+<div class="row">
+    <button [class.active]="filterBy==='all'" (click)="filterBy='all'">All</button>
+    <button [class.active]="filterBy==='birthdaycard'" (click)="filterBy='birthdaycard'">Birthday Card</button>
+    <button [class.active]="filterBy==='freindshipcard'" (click)="filterBy='freindshipcard'">Friendship Card</button>
+    <ul>
+        <li *ngFor ="let image of (visibleImages | imagefilter: filterBy)"> 
+            <img src="{{image.url}}" class="th" width="200" height="160">
+        </li>
+    </ul>
+</div>

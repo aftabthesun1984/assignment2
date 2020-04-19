@@ -1,0 +1,12 @@
+
+<!-- Two way binding without using [(ngModel)] -->
+<!-- <input [value]="childCounter" (input)="childCounter=$event.target.value" />{{"Two way binding without using [(ngModel)]"}} <br/> -->
+<!-- Two way binding using ngModel -->
+
+<input [(ngModel)]="childCounter" /> <!-- Two way binding using [(ngModel)] -->
+<!-- Interpolation --> 
+<h2>Value : {{childCounter}} </h2> 
+
+
+<hr>
+

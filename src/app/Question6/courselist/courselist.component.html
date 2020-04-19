@@ -1,0 +1,12 @@
+<h5>{{title}}</h5><br/>
+
+<div class="row">    
+    <ul>
+        <li *ngFor ="let course of courseList"> 
+            <a [routerLink] = "['/course', course.id]">
+                {{course.name}}
+            </a>
+            <!-- <img src="{{image.url}}" class="th" width="200" height="160"> -->
+        </li>
+    </ul>
+</div>

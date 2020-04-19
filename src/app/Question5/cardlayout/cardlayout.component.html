@@ -1,0 +1,27 @@
+
+
+<div class="container">
+    <h5>{{title}}</h5>
+    <div class="row">        
+        <div class="col-sm-2">
+            <ul>
+                <li (click)="onClick(product.id)" *ngFor="let product of productList">
+                    <a href="#"> {{product.name}} </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-sm-6" style="width: 50px;">
+            <app-accordion [title]="productName">
+                <app-accordion [title]="productName"></app-accordion>
+
+                <div class="mypanelbody">
+                    <h3> {{discription}}</h3>
+                </div>
+                <div class="mypanelfooter">
+                    <h3> {{companyName}}</h3>
+                </div>
+            </app-accordion>
+        </div>
+    </div>
+</div>
